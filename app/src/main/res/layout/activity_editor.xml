@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin"
+    tools:context=".EditorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/title_cat_inventory_assets_product_overview" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingLeft="4dp">
+
+            <EditText
+                android:id="@+id/edit_inventory_assets_product_name"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_inventory_assets_product_name"
+                android:inputType="textCapWords" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_measurement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/title_cat_inventory_assets_product_price" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:paddingLeft="4dp">
+
+            <EditText
+                android:id="@+id/edit_inventory_assets_product_price"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_inventory_assets_product_price"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/label_currency_units"
+                style="@style/EditorUnitsStyle"
+                android:text="@string/unit_inventory_currency_default" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_measurement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/title_cat_inventory_assets_product_quantity" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:paddingLeft="4dp">
+
+            <EditText
+                android:id="@+id/edit_inventory_assets_product_quantity"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_inventory_assets_product_quantity"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/label_pcs_units"
+                style="@style/EditorUnitsStyle"
+                android:text="@string/unit_inventory_pcs" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/title_cat_inventory_logistics_overview" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:paddingLeft="4dp">
+
+            <EditText
+                android:id="@+id/edit_inventory_logistics_supplier_name"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_inventory_logistics_supplier_name"
+                android:inputType="textCapWords" />
+
+            <EditText
+                android:id="@+id/edit_inventory_logistics_supplier_phone"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/hint_inventory_logistics_supplier_phone"
+                android:inputType="textCapWords" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
